@@ -1,0 +1,137 @@
+.logo{
+    float:left;
+}
+.icon img{
+    display:block;
+    height: 50px;
+    margin-top:10px;
+    margin-left: 30px;
+    opacity: 0.8;
+}
+.txt{
+    display:block;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:5px;
+    text-align: center;
+    width:100px;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.texts{
+    float:right;
+    border-bottom:solid 1px rgba(0, 0, 0, 0.8);
+    margin-right:20px;
+}
+.vision{
+    float:left;
+}
+.introduction{
+    float:left;
+}
+.works{
+    float:left;
+}
+.contact{
+    float:left;
+    margin-right: 600px;
+}
+
+.text{
+    width: 180px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    text-align: center;
+    opacity: 0.8;
+    background-color:rgba(0, 0, 0, 0);
+    transition: background-color 0.5s;
+}
+.text:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.text a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+}
+.contents h1{
+    margin-top:80px;
+    font-size:40px;
+    letter-spacing: 0.12em;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    font-weight: normal;
+    text-align: center;
+    width:100%;
+}
+  
+  /*以下で線を表示*/
+.contents h1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;/*線の上下位置*/
+    display: inline-block;
+    width: 90px;/*線の長さ*/
+    height: 3px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: black;/*線の色*/
+    border-radius: 0px;/*線の丸み*/
+}
+.contents h2{
+    font-weight:normal;
+    font-size:25px;
+    width:100%;
+    text-align: center;
+    letter-spacing: 0.12em;
+    margin-bottom:70px;
+    margin-top:55px;
+}
+.sentence p{
+    font-size:15px;
+    letter-spacing: 0.1em;
+    margin-top:35px;
+}
+.key{
+    text-align: center;
+
+}
+.words{
+    margin-left:400px;
+}
+.next a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    letter-spacing: 0.12em;
+    margin-bottom:120px;
+    font-weight:bold;
+}
+.next a::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1.2px;
+    background: #000000;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+}
+.next a:hover::after {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+.next{
+    margin-top:50px;
+    width:100%;
+    text-align: center;
+}
